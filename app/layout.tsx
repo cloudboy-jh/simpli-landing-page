@@ -5,8 +5,12 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'SaaSFlow - Build faster, scale smarter',
+  title: 'Simpli',
   description: 'The all-in-one platform for modern teams. Streamline your workflow, collaborate seamlessly, and ship products faster.',
+  icons: {
+    icon: '/simplilpicon.png',
+    apple: '/simplilpicon.png',
+  },
 };
 
 export default function RootLayout({
