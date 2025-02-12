@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Origami, Menu, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,17 +13,15 @@ import { CodeBlock } from "@/components/ui/code-block";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const router = useRouter();
 
-  const scrollToFAQ = () => {
-    const faqSection = document.getElementById('faq-section');
-    if (faqSection) {
-      faqSection.scrollIntoView({ behavior: 'smooth' });
-    }
+  const navigateToFAQ = () => {
+    router.push('/info');
     setIsMenuOpen(false);
   };
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    router.push('/');
     setIsMenuOpen(false);
   };
 
@@ -54,7 +53,7 @@ export function Navbar() {
         <nav className="hidden md:flex items-center space-x-4">
           <Button variant="ghost" className="text-base" onClick={scrollToWhatsNext}>Coming Soon..</Button>
           <Button variant="ghost" className="text-base" onClick={scrollToAbout}>About</Button>
-          <Button variant="ghost" className="text-base" onClick={scrollToFAQ}>FAQ</Button>
+          <Button variant="ghost" className="text-base" onClick={navigateToFAQ}>FAQ</Button>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button className="text-base">
@@ -85,7 +84,7 @@ export function Navbar() {
           <div className="flex flex-col space-y-2 p-4">
             <Button variant="ghost" className="text-base w-full justify-start" onClick={scrollToWhatsNext}>Coming Soon..</Button>
             <Button variant="ghost" className="text-base w-full justify-start" onClick={scrollToAbout}>About</Button>
-            <Button variant="ghost" className="text-base w-full justify-start" onClick={scrollToFAQ}>FAQ</Button>
+            <Button variant="ghost" className="text-base w-full justify-start" onClick={navigateToFAQ}>FAQ</Button>
             <div className="w-full p-4 border rounded-lg bg-background/95">
               <CodeBlock code="npx simpli-frontend my-project" />
             </div>

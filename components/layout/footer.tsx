@@ -85,6 +85,7 @@ export function Footer() {
               <h4 className="text-lg font-semibold">Company</h4>
               <div className="flex flex-col space-y-4">
                 <a href="#about-section" className="text-gray-600 hover:text-gray-900">About</a>
+                <a href="/info" className="text-gray-600 hover:text-gray-900">FAQ</a>
               </div>
             </div>
 

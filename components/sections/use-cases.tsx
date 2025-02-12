@@ -36,7 +36,7 @@ export function UseCasesSection() {
     <section className="py-16 bg-white">
       <div className="container px-4 mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Who is Simpli for?</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Who is Simpli for?</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {useCases.map((useCase, index) => (

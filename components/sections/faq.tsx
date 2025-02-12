@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Wrench, FileCode } from "lucide-react";
 
 export function FAQSection() {
   return (
@@ -17,8 +18,15 @@ export function FAQSection() {
         <Accordion type="single" collapsible className="text-left">
           <AccordionItem value="item-1">
             <AccordionTrigger>What&apos;s included in Simpli?</AccordionTrigger>
-            <AccordionContent>
-              Simpli includes a comprehensive suite of tools and features designed to streamline your development workflow. This includes automated code analysis, intelligent suggestions, real-time collaboration features, and seamless integration with popular development tools and platforms.
+            <AccordionContent className="flex flex-col gap-3">
+              <div className="flex items-center gap-2">
+                <Wrench className="h-[18px] w-[18px] text-pink-400" />
+                The Simpli Framework – A prebuilt, opinionated foundation for modern app development
+              </div>
+              <div className="flex items-center gap-2">
+                <FileCode className="h-[18px] w-[18px] text-blue-400" />
+                A Frontend CLI – Instantly generate a frontend template with <code className="px-1.5 py-0.5 bg-slate-100 rounded-md">npx simpli-frontend my-project</code>
+              </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">

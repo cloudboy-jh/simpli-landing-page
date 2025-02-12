@@ -1,6 +1,7 @@
 "use client";
 
 import { Badge } from "@/components/ui/badge";
+import { CodeBlock } from "@/components/ui/code-block";
 
 export function HeroSection() {
   return (
@@ -15,7 +16,13 @@ export function HeroSection() {
               Build faster, Ship smarter
             </h1>
             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-              The all-in-one framework for modern development. Skip the setup, focus on shipping
+              Run one command → Get a fully structured Next.js app with UI & Tailwind, instantly.
+            </p>
+          </div>
+          <div className="w-full max-w-xl pt-8">
+            <CodeBlock code="npx simpli-frontend my-project" />
+            <p className="mt-4 text-gray-500 md:text-lg dark:text-gray-400">
+              No boilerplate. No setup. Just ship.
             </p>
           </div>
         </div>

@@ -4,15 +4,11 @@ import { useEffect, useState } from "react";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { HeroSection } from "@/components/sections/hero";
-import { FeaturesSection } from "@/components/sections/features";
 import { HowItWorksSection } from "@/components/sections/how-it-works";
-import { CodeExampleSection } from "@/components/sections/code-example";
 import { WhatsNextSection } from "@/components/sections/whats-next";
-import { FAQSection } from "@/components/sections/faq";
-import { UseCasesSection } from "@/components/sections/use-cases";
-import { ComparisonSection } from "@/components/sections/comparison";
-import { CommunitySection } from "@/components/sections/community";
 import { AboutSection } from "@/components/sections/about";
+import { UseCasesSection } from "@/components/sections/use-cases";
+import { GifDemo } from "@/components/sections/GifDemo";
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,15 +22,13 @@ export default function Home() {
       <Navbar />
       <main className={`flex-1 transition-opacity duration-1000 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
         <HeroSection />
-        <FeaturesSection />
+        <div className="-mt-24">
+          <GifDemo />
+        </div>
         <UseCasesSection />
-        <ComparisonSection />
         <HowItWorksSection />
-        <CodeExampleSection />
         <WhatsNextSection />
         <AboutSection />
-        <FAQSection />
-        <CommunitySection />
       </main>
       <Footer />
     </div>
