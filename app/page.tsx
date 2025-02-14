@@ -9,6 +9,7 @@ import { WhatsNextSection } from "@/components/sections/whats-next";
 import { AboutSection } from "@/components/sections/about";
 import { UseCasesSection } from "@/components/sections/use-cases";
 import { GifDemo } from "@/components/sections/GifDemo";
+import { Gallery } from "@/components/sections/Gallery";
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,6 +28,7 @@ export default function Home() {
         <div className="-mt-24">
           <GifDemo />
         </div>
+        <Gallery />
         <UseCasesSection />
         <HowItWorksSection />
         <WhatsNextSection />

@@ -16,7 +16,7 @@ export function HeroSection() {
               Build faster, Ship smarter
             </h1>
             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-              Run one command → Get a fully structured Next.js app with UI & Tailwind, instantly.
+              Run one command → Get a fully structured Next.js app with UI & TailwindCSS, instantly.
             </p>
           </div>
           <div className="w-full max-w-xl pt-8">
