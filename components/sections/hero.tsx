@@ -5,7 +5,7 @@ import { CodeBlock } from "@/components/ui/code-block";
 
 export function HeroSection() {
   return (
-    <section className="py-24">
+    <section className="pt-10 pb-24">
       <div className="container mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center space-y-4 text-center">
           <div className="space-y-2">

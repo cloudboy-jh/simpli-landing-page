@@ -21,7 +21,9 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <Navbar />
       <main className={`flex-1 transition-opacity duration-1000 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-        <HeroSection />
+        <div className="-mt-4">
+          <HeroSection />
+        </div>
         <div className="-mt-24">
           <GifDemo />
         </div>
