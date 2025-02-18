@@ -22,7 +22,7 @@ export function HeroSection() {
           <div className="w-full max-w-xl pt-8">
             <CodeBlock code="npx simpli-frontend my-project" />
             <p className="mt-4 text-gray-500 md:text-lg dark:text-gray-400">
-              No boilerplate. No setup. Just ship.
+              No Fluff. Just ship.
             </p>
           </div>
         </div>
