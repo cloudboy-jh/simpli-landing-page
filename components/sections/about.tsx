@@ -26,7 +26,7 @@ export function AboutSection() {
               <div className="flex flex-wrap justify-center items-center gap-8 py-4">
                 <div className="flex flex-col items-center gap-2">
                   <Image 
-                    src="https://nextjs.org/static/favicon/favicon-32x32.png"
+                    src="https://nextjs.org/favicon.ico"
                     alt="Next.js"
                     width={32}
                     height={32}

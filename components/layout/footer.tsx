@@ -27,7 +27,7 @@ export function Footer() {
                   className="text-gray-600 hover:text-gray-900 flex items-center gap-2"
                 >
                   <Image
-                    src="https://nextjs.org/static/favicon/favicon-32x32.png"
+                    src="https://nextjs.org/favicon.ico"
                     alt="Next.js"
                     width={20}
                     height={20}

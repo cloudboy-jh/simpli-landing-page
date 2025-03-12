@@ -13,6 +13,7 @@ import { Gallery } from "@/components/sections/Gallery";
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
@@ -23,9 +24,9 @@ export default function Home() {
       <Navbar />
       <main className={`flex-1 transition-opacity duration-1000 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
         <div className="-mt-4">
-          <HeroSection />
+          <HeroSection setIsSearchOpen={setIsSearchOpen} />
         </div>
-        <div className="-mt-24">
+        <div className={`transition-all duration-500 ease-in-out ${isSearchOpen ? 'mt-8' : '-mt-24'}`}>
           <GifDemo />
         </div>
         <Gallery />

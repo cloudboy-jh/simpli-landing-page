@@ -57,13 +57,24 @@ export function Navbar() {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button className="text-base">
-                Our CLI
+                Our App Starters
                 <ChevronDown className="ml-2 h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="w-[400px] sm:w-[500px]">
-              <div className="p-4">
-                <CodeBlock code="npx simpli-frontend my-project" />
+              <div className="p-4 space-y-4">
+                <div className="mb-2">
+                  <h3 className="text-sm font-medium mb-2">Frontend</h3>
+                  <CodeBlock code="npx simpli-frontend my-project" />
+                </div>
+                <div className="mb-2">
+                  <h3 className="text-sm font-medium mb-2">Marketplace</h3>
+                  <CodeBlock code="npx simpli-marketplacev1 my-new-project" />
+                </div>
+                <div>
+                  <h3 className="text-sm font-medium mb-2">Docs</h3>
+                  <CodeBlock code="npx simpli-docsv1 my-docs-project" />
+                </div>
               </div>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -81,12 +92,23 @@ export function Navbar() {
       {/* Mobile Navigation */}
       {isMenuOpen && (
         <nav className="md:hidden border-t bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-          <div className="flex flex-col space-y-2 p-4">
+          <div className="flex flex-col space-y-4 p-4">
             <Button variant="ghost" className="text-base w-full justify-start" onClick={scrollToWhatsNext}>Coming Soon..</Button>
             <Button variant="ghost" className="text-base w-full justify-start" onClick={scrollToAbout}>About</Button>
             <Button variant="ghost" className="text-base w-full justify-start" onClick={navigateToFAQ}>FAQ</Button>
-            <div className="w-full p-4 border rounded-lg bg-background/95">
-              <CodeBlock code="npx simpli-frontend my-project" />
+            <div className="w-full p-4 border rounded-lg bg-background/95 space-y-4">
+              <div className="mb-2">
+                <h3 className="text-sm font-medium mb-2">Frontend</h3>
+                <CodeBlock code="npx simpli-frontend my-project" />
+              </div>
+              <div className="mb-2">
+                <h3 className="text-sm font-medium mb-2">Marketplace</h3>
+                <CodeBlock code="npx simpli-marketplacev1 my-new-project" />
+              </div>
+              <div>
+                <h3 className="text-sm font-medium mb-2">Docs</h3>
+                <CodeBlock code="npx simpli-docsv1 my-docs-project" />
+              </div>
             </div>
           </div>
         </nav>
